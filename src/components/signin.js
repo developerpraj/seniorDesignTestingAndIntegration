@@ -102,10 +102,10 @@ export default class Login extends Component {
             <div className="container">
                 <Form id="loginForm" method="post" onSubmit={this.login}>
                     <FormGroup>
-                        <Label for="email">Email: </Label>
+                        <Label className="email"for="email">Email: </Label>
                         <Input
                             type="text"
-                            validations={['required','isEmail']}
+                            validations ={['required','isEmail']}
                             name="email"
                             value={this.state.email}
                             onChange={this.handleChange}
@@ -115,7 +115,7 @@ export default class Login extends Component {
                       <FromValidationError field={this.state.errors.email} />
                     </FormGroup>
                     <FormGroup>
-                        <Label for="password">Password</Label>
+                        <Label className="password" for="password">Password</Label>
                         <Input
                             type="password"
                             validations={['required']}
