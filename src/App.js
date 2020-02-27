@@ -13,6 +13,7 @@ import Box from '@material-ui/core/Box';
 
 
 import Login from './components/signin'
+import Register from './components/register'
 function TabPanel(props) {
   const { children, value, index, ...other } = props;
 
@@ -66,6 +67,7 @@ export default function FullWidthTabs() {
 
   return (
     <div className={classes.root}>
+      
       <AppBar position="static" color="default">
         <Tabs
           value={value}
@@ -89,7 +91,7 @@ export default function FullWidthTabs() {
           <Login />
         </TabPanel>
         <TabPanel value={value} index={1} dir={theme.direction}>
-          <Login />
+          <Register />
         </TabPanel>
       </SwipeableViews>
     </div>

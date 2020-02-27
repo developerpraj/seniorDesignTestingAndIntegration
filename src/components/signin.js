@@ -3,7 +3,7 @@ import { Button, Form, FormGroup, Label, Input, Fade  } from 'reactstrap';
 import _ from 'lodash';
 
 import '../style.css'
- 
+const logo = require('./logo.png'); 
 const validationMethods =  {
     required : (field, value) => {
         if (!value.toString().trim().length) {
@@ -99,7 +99,9 @@ export default class Login extends Component {
  
     render() {
         return (
+           
             <div className="container">
+                 <img src={logo} />
                 <Form id="loginForm" method="post" onSubmit={this.login}>
                     <FormGroup>
                         <Label className="email"for="email">Email: </Label>
@@ -127,9 +129,14 @@ export default class Login extends Component {
                         />
                         <FromValidationError field={this.state.errors.password} />
                     </FormGroup>
+                    
+                    <div>
                     <Button className="button" >login</Button>
+                    </div>
                 </Form>
+
             </div>
+            
         );
     }
 }
