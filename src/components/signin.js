@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Button, Form, FormGroup, Label, Input, Fade  } from 'reactstrap';
 import _ from 'lodash';
 
-import '../style.css'
 const logo = require('./logo.png'); 
 const validationMethods =  {
     required : (field, value) => {
@@ -99,7 +98,7 @@ export default class Login extends Component {
  
     render() {
         return (
-           
+
             <div className="container">
                  <img src={logo} />
                 <Form id="loginForm" method="post" onSubmit={this.login}>
@@ -129,12 +128,8 @@ export default class Login extends Component {
                         />
                         <FromValidationError field={this.state.errors.password} />
                     </FormGroup>
-                    
-                    <div>
-                    <Button className="button" >login</Button>
-                    </div>
+                    <Button className="button" >SignIn</Button>
                 </Form>
-
             </div>
             
         );

@@ -1,5 +1,4 @@
 
-
 import React from 'react';
 import PropTypes from 'prop-types';
 import SwipeableViews from 'react-swipeable-views';
@@ -9,6 +8,7 @@ import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
+
 
 
 
@@ -48,9 +48,20 @@ function a11yProps(index) {
 const useStyles = makeStyles(theme => ({
   root: {
     backgroundColor: theme.palette.background.paper,
-    width: 500,
-  },
+    width: 400,
+    display: 'inline-block',
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "#ffff",
+    position:'absolute',
+    border:'solid',
+    borderColor: "#D4AF37",
+    marginLeft: '500px',
+    marginTop: '100px'
+    
+  }
 }));
+
 
 export default function FullWidthTabs() {
   const classes = useStyles();

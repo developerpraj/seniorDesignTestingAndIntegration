@@ -15,9 +15,9 @@
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  margin-top: 3cm;
-  margin-left: 2.3cm;
-  font-size: 16px;;
+  margin-inline-start: 1cm;
+  font-size: 16px;
+  position: center;
   margin-right: auto;
 
   }
@@ -43,5 +43,9 @@
     margin-right: auto;
     width: 80%;
 
+}
+
+.container form input{
+    margin-left: 10px;
 }
 
