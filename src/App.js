@@ -48,16 +48,16 @@ function a11yProps(index) {
 const useStyles = makeStyles(theme => ({
   root: {
     backgroundColor: theme.palette.background.paper,
-    width: 400,
+    width: 350,
     display: 'inline-block',
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "#ffff",
-    position:'absolute',
+    position:'relative',
     border:'solid',
     borderColor: "#D4AF37",
-    marginLeft: '500px',
-    marginTop: '100px'
+    marginLeft:'550px',
+  
     
   }
 }));

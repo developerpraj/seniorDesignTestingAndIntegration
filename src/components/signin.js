@@ -118,7 +118,7 @@ export default class Login extends Component {
                     </FormGroup>
                     <FormGroup>
                         <Label className="password" for="password">Password</Label>
-                        <Input
+                        <Input 
                             type="password"
                             validations={['required']}
                             name="password"

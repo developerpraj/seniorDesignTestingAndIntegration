@@ -108,7 +108,7 @@ export default class Register extends Component {
                <img src={logo} />
                 <Form id="registerForm" method="post" onSubmit={this.Register}>
                     <FormGroup>
-                        <Label className="firstName"for="firstName">First Name: </Label>
+                        <Label className="firstName"for="firstName">First Name </Label>
                         <Input
                             type="text"
                             validations={['required']}
@@ -165,7 +165,7 @@ export default class Register extends Component {
                     </FormGroup>
 
                     <Button variant="secondary" size="lg" block>
-                     Register
+                     Register 
                     </Button>
                 </Form>
             </div>
