@@ -164,7 +164,9 @@ export default class Register extends Component {
                         <FromValidationError field={this.state.errors.password} />
                     </FormGroup>
 
-                    <Button className="button" >Register</Button>
+                    <Button variant="secondary" size="lg" block>
+                     Register
+                    </Button>
                 </Form>
             </div>
         );

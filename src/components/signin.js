@@ -3,6 +3,7 @@ import { Button, Form, FormGroup, Label, Input, Fade  } from 'reactstrap';
 import _ from 'lodash';
 
 const logo = require('./logo.png'); 
+const lo = require('./o365.png'); 
 const validationMethods =  {
     required : (field, value) => {
         if (!value.toString().trim().length) {
@@ -128,7 +129,9 @@ export default class Login extends Component {
                         />
                         <FromValidationError field={this.state.errors.password} />
                     </FormGroup>
-                    <Button className="button" >SignIn</Button>
+                     <Button className='log' variant="outline-primary" >
+                         Login
+                    </Button>
                 </Form>
             </div>
             

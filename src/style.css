@@ -19,6 +19,7 @@
   font-size: 16px;
   position: center;
   margin-right: auto;
+  
 
   }
 
@@ -49,3 +50,7 @@
     margin-left: 10px;
 }
 
+.log img{
+height: 15px;
+width: 15px;
+}
