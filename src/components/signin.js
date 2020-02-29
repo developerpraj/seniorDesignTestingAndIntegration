@@ -130,7 +130,7 @@ export default class Login extends Component {
                         <FromValidationError field={this.state.errors.password} />
                     </FormGroup>
                      <Button className='log' variant="outline-primary" >
-                         Login
+                         Login with O365
                     </Button>
                 </Form>
             </div>
