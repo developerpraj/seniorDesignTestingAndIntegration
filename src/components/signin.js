@@ -143,7 +143,7 @@ export default class Login extends Component {
                     </FormGroup>
                     <ReactLoginMS
                          clientId="3e6f7b8a-c950-489f-af64-19b575aa4ca4" // required: 'application id/client id' obtained from https://apps.dev.microsoft.com for your app
-                         redirectUri="http://localhost:3000/authorize" // required: redirectUri registered in https://apps.dev.microsoft.com for your app
+                         redirectUri="https://lomashbhattarai.github.io/" // required: redirectUri registered in https://apps.dev.microsoft.com for your app
                          scopes={["user.read"]} //optional: defaults to "user.read" full list is present https://developer.microsoft.com/en-us/graph/docs/concepts/permissions_reference
                          responseType="token" //optional: valid values are "token" for `Implicite OAuth flow` and "code" for `Authorization Code flow` defaults to "token"
                          cssClass="some-css-class" // optional: space separated class names which are applied on the html Button element
